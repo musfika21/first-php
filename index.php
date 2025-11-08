@@ -9,5 +9,8 @@
     <div class="container">
         My first php website
     </div>
+    <?php
+        echo "PHP CODE"
+    ?>
 </body>
 </html>
