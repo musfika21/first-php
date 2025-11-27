@@ -1,21 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MY first php website</title>
-</head>
-<body>
-    <div class="container">
-        My first php website
-    </div>
-    <?php
-        $var1 = 10;
-        $var2 = 20;
+<?php
+    $server = "localhost";
+    $username = "root";
+    $password = "";
 
-        echo "sum = ";
-        echo $var1 + $var2;
-        echo "PHP CODE";
-    ?>
-</body>
-</html>
+    $con = mysqli_connect($server, $username, $password);
+
+    if(!$con){
+        die("database connection failed due to" . mysqli_connect_error());
+    } else {
+        echo "Database connection successful";
+    }
+?>
