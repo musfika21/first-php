@@ -10,7 +10,12 @@
         My first php website
     </div>
     <?php
-        echo "PHP CODE"
+        $var1 = 10;
+        $var2 = 20;
+
+        echo "sum = ";
+        echo $var1 + $var2;
+        echo "PHP CODE";
     ?>
 </body>
 </html>
